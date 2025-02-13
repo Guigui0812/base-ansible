@@ -1,0 +1,15 @@
+  ___ ___                       .__        ___.    
+ /   |   \  ____   _____   ____ |  | _____ \_ |__  
+/    ~    \/  _ \ /     \_/ __ \|  | \__  \ | __ \ 
+\    Y    (  <_> )  Y Y  \  ___/|  |__/ __ \| \_\ \
+ \___|_  / \____/|__|_|  /\___  >____(____  /___  /
+       \/              \/     \/          \/    \/ 
+
+Host : {{ ansible_hostname }}
+IP   : {{ ansible_default_ipv4.address }}
+OS   : {{ ansible_distribution }} {{ ansible_distribution_version }}
+Arch : {{ ansible_architecture }}
+User : {{ ansible_user }}
+Time : {{ ansible_date_time.date }} {{ ansible_date_time.time }}
+
+This host is managed by Ansible.

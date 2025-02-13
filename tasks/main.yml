@@ -1,0 +1,25 @@
+---
+# tasks file for base-role
+- name: Install base packages
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - net-tools
+    - vim
+    - wget
+    - curl
+    - git
+    - tcpdump
+    - rsync
+    - tar
+    - unzip
+    - iputils-ping
+
+- name: Set motd
+  template:
+    src: templates/motd.j2
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: 0644
