@@ -17,6 +17,9 @@
     - iputils-ping
     - python3
     - python3-pip
+    - rsyslog
+    - logrotate
+    - cron
 
 - name: Set motd
   template:
