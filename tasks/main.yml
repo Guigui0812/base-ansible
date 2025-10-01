@@ -21,6 +21,7 @@
     - logrotate
     - cron
     - dnsutils
+    - nfs-common
 
 - name: Set motd
   template:
