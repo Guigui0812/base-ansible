@@ -22,6 +22,8 @@
     - cron
     - dnsutils
     - nfs-common
+    - ncdu
+    - batcat
 
 - name: Set motd
   template:
